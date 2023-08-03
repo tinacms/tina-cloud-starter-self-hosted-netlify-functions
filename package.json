@@ -11,6 +11,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@clerk/backend": "^0.27.0",
+    "@clerk/clerk-js": "^4.55.0",
     "@tinacms/cli": "^0.0.0-20230725171356",
     "mongodb-level": "^0.0.2",
     "netlify-cli": "^15.10.0",
