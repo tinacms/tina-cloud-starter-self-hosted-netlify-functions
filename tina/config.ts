@@ -7,7 +7,7 @@ export default defineConfig({
   branch,
   clientId: null, // Get this from tina.io
   token: null, // Get this from tina.io
-
+  contentApiUrlOverride: "/graphql",
   build: {
     outputFolder: "admin",
     publicFolder: "public",
