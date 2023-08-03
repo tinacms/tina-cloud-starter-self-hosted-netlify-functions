@@ -1,9 +1,7 @@
 import { defineConfig } from "tinacms";
 
 export default defineConfig({
-  // contentApiUrlOverride: "http://localhost:9999/.netlify/functions/graphql",
-  contentApiUrlOverride:
-    "https://kaleidoscopic-bunny-6b8b08.netlify.app/.netlify/functions/graphql",
+  contentApiUrlOverride: "/.netlify/functions/graphql",
   admin: {
     auth: {
       useLocalAuth: true,
