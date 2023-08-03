@@ -1,5 +1,5 @@
 import { defineConfig } from "tinacms";
-import Clerk from "@clerk/clerk-js/dist/clerk.mjs";
+import Clerk from "@clerk/clerk-js";
 
 const clerkPubKey = process.env.TINA_PUBLIC_CLERK_PUBLIC_KEY!;
 const clerk = new Clerk(clerkPubKey);
