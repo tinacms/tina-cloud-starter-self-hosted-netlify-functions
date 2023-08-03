@@ -1,5 +1,5 @@
 ---
-title: 'Hello, World. This is good.'
+title: 'Hello, World.'
 ---
 
 ## Hello World!
