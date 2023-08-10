@@ -3,8 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "dev-2": "tinacms dev -c \"vite\"",
+    "dev": "tinacms dev -c \"netlify dev -c \"vite\" \"",
     "build": "tinacms build && tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -18,7 +17,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tinacms": "^0.0.0-20230725171356",
-    "tinacms-gitprovider-github": "^0.0.0-20230725144115",
+    "tinacms-gitprovider-github": "^0.0.0-20230725171356",
     "wrangler": "^3.4.0"
   },
   "devDependencies": {

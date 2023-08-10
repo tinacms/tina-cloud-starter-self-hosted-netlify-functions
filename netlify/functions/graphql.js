@@ -1,13 +1,6 @@
 import { databaseClient } from "../../tina/__generated__/databaseClient";
 import { Clerk } from "@clerk/backend";
-
-export const isUserAllowed = (emailAddress) => {
-  const allowList = ["jeffsee.55@gmail.com"];
-  if (allowList.includes(emailAddress)) {
-    return true;
-  }
-  return false;
-};
+import { isUserAllowed } from "../../tina/config";
 
 const secretKey = process.env.CLERK_SECRET;
 const clerk = Clerk({
@@ -36,7 +29,7 @@ const isAuthorized = async (event) => {
 
 const headers = {
   "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "Content-Type",
+  "Access-Control-Allow-Headers": "Authorization, Content-Type",
   "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
 };
 
