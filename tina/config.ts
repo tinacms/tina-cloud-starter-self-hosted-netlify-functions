@@ -9,7 +9,7 @@ const clerk = new Clerk(clerkPubKey);
  * https://clerk.com/docs/authentication/allowlist
  */
 export const isUserAllowed = (emailAddress: string) => {
-  const allowList = ["jeffsee.55@gmail.com"];
+  const allowList = [process.env.TINA_PUBLIC_PERMITTED_EMAIL];
   if (allowList.includes(emailAddress)) {
     return true;
   }
